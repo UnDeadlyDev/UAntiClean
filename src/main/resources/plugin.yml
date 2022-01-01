@@ -1,0 +1,5 @@
+name: UAntiClean
+version: 1.0.0-SNAPSHOT
+main: com.github.undeadlydev.UAntiClean.Main
+author: [BrunoAvixdub]
+api-version: 1.13
