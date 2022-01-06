@@ -1,2 +1,6 @@
 DENY-WORLDS:
 - world
+
+#SET TO TRUE FOR NEED PERMS TO RECEIVED HEALING - PERM: "uanticlean.received"
+RECEIVED_HEALING:
+  NEED_PERMS: false

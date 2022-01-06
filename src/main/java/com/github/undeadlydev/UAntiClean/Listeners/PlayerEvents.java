@@ -23,10 +23,19 @@ public class PlayerEvents implements Listener {
     public void onKill(PlayerKilledEvent event) {
     	Player killer = event.getKiller();
     	if (!Main.GetCfg().getStringList("DENY-WORLDS").contains(killer.getWorld().getName())) {
-            if (event.hasKiller()) {
-        	    double to = killer.getHealth() + ThreadLocalRandom.current().nextDouble(3.5D, 5.5D);
-                killer.setHealth(Math.min(killer.getMaxHealth(), to));
-            }
+    		if (Main.GetCfg().getBoolean("RECEIVED_HEALING.NEED_PERMS")) {
+        		if (killer.hasPermission("uanticlean.received")) {
+                    if (event.hasKiller()) {
+                	    double to = killer.getHealth() + ThreadLocalRandom.current().nextDouble(3.5D, 5.5D);
+                        killer.setHealth(Math.min(killer.getMaxHealth(), to));
+                    }
+        		}
+    		} else {
+                if (event.hasKiller()) {
+            	    double to = killer.getHealth() + ThreadLocalRandom.current().nextDouble(3.5D, 5.5D);
+                    killer.setHealth(Math.min(killer.getMaxHealth(), to));
+                }
+    		}
         }
     }
     
