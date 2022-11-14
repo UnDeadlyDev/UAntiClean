@@ -4,3 +4,12 @@ DENY-WORLDS:
 #SET TO TRUE FOR NEED PERMS TO RECEIVED HEALING - PERM: "uanticlean.received"
 RECEIVED_HEALING:
   NEED_PERMS: false
+  
+STRENGTH_EFFECT:
+  NEED_PERMS: false
+  Enable: false
+  Duration: 3
+  Level: 1
+  
+INSTAKILL_VOID:
+  Enable: false

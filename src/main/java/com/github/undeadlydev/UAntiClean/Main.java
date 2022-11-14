@@ -43,9 +43,9 @@ public class Main extends JavaPlugin implements Listener {
     public void onDisable() {
     	ConsoleUtils.getLoggs("&7-----------------------------------", true);
     	ConsoleUtils.getLoggs("", true);
-    	ConsoleUtils.getLoggs("§fSuccessfully Plugin §cDisable!", true);
-    	ConsoleUtils.getLoggs("§fCreator: §eBrunoAvixdub", true);
-    	ConsoleUtils.getLoggs("§fThanks for use my plugin :D", true);
+    	ConsoleUtils.getLoggs("&fSuccessfully Plugin &cDisable!", true);
+    	ConsoleUtils.getLoggs("&fCreator: &eBrunoAvixdub", true);
+    	ConsoleUtils.getLoggs("&fThanks for use my plugin :D", true);
     	ConsoleUtils.getLoggs("", true);
     	ConsoleUtils.getLoggs("&7-----------------------------------", true);
     }
